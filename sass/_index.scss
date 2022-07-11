@@ -1,0 +1,38 @@
+@mixin sizes ($height, $width){
+    height: $height;
+    width: $width;
+}
+
+main{
+    @include sizes(649px, auto);
+    h2{
+        display: flex;
+        justify-content: center;
+        background-color: $bg2;
+        color: $textcolor;
+        font-weight: bold;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        @include sizes(500px, 100%);
+        div{
+            div{
+                div{
+                    div{
+                        background-color: black;
+                        h5{
+                            padding: 1rem;
+                        }
+                        p{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+

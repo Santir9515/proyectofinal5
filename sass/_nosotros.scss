@@ -1,0 +1,7 @@
+@mixin sizes ($height){
+    height: $height;
+}
+
+.nosotros{ 
+    @include sizes(750px)
+}

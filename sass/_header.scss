@@ -1,0 +1,21 @@
+@mixin sizes ($height, $width){
+    height: $height;
+    width: $width;
+}
+header{
+    h1{
+   font-weight: bold;
+   img{
+        @include sizes(100px, 100px)
+   }
+}
+div{
+    ul{
+        li{
+            img{
+               @include sizes(30px, 30px)
+            }
+        }
+    }
+}
+}

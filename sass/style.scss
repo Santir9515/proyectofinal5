@@ -1,0 +1,25 @@
+$bg: linear-gradient(#2791cf9c 80%, #0c0c0c);
+$bg2: #000000;
+$textcolor: #fffffff1;
+
+
+@import "index";
+@import "catalogo";
+@import "contacto";
+@import "carrito";
+@import "nosotros";
+@import "footer";
+@import "header";
+@import "body";
+@import "responsive";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+
+

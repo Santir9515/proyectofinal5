@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap");
+main {
+  height: 649px;
+  width: auto; }
+  main h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: #fffffff1;
+    font-weight: bold; }
+  main section {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%; }
+    main section div div div div {
+      background-color: black; }
+      main section div div div div h5 {
+        padding: 1rem; }
+      main section div div div div p {
+        font-weight: bold; }
+
+.catalogo {
+  height: 1700px; }
+  .catalogo div div div div img {
+    height: 30px; }
+
+.contacto {
+  height: 665px; }
+
+.Fondo_pantalla .carrito {
+  height: 50px; }
+  .Fondo_pantalla .carrito .Subtitulos__main {
+    background-color: #000000;
+    color: #fffffff1;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; }
+
+  .Playlist {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-areas: 'track1' 'track2'
+                         'track3' 'track4';
+    text-align: center;
+
+    }
+    
+    .track1 { 
+        grid-area: track1; 
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .track2 {
+        grid-area: track2; 
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    .track3 { 
+        grid-area: track3; 
+        grid-column: 1 / 2;
+        grid-row: 2; 
+    }
+    .track4 { 
+        grid-area: track4;
+        grid-column: 2 / 3;
+        grid-row: 2; 
+    }
+
+
+.nosotros {
+  height: 750px; }
+
+footer div p {
+  font-size: 8px;
+  display: flex;
+  justify-content: center; }
+
+header h1 {
+  font-weight: bold; }
+  header h1 img {
+    height: 100px;
+    width: 100px; }
+
+header div ul li img {
+  height: 30px;
+  width: 30px; }
+
+body {
+  background: linear-gradient(#2791cf9c 80%, #0c0c0c);
+  font-family: 'Poppins', sans-serif; }
+
+@media (max-width: 786px){
+  .Playlist{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+  }
+
+
+
+}
+ 
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .Imagen_contactos {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: flex-start;
+    padding-bottom: 2rem; }
+  .Imagen__Destacada {
+    width: 250px;
+    height: 450px; }
+  .container.contacto {
+    padding-left: 1rem; }
+  .contacto {
+    height: 740px; }
+  .nosotros div div div iframe {
+    width: 250px;
+    height: 150px; }
+  .catalogo {
+    height: 2500px; }
+  .contacto2 {
+    height: 760px; }
+  .Playlist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "track1"
+ "track2"
+ "track3"
+ "track4"; } }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }

@@ -1,0 +1,56 @@
+@mixin sizes ($height){
+    height: $height;
+}
+
+.Fondo_pantalla{
+    .carrito{
+        @include sizes(50px);
+        .Subtitulos__main{
+            background-color: $bg2;
+            color: $textcolor;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+}    
+
+.Playlist {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-areas: 'track1' 'track2'
+                            'track3' 'track4';
+    text-align: center;
+
+    }
+    
+    .track1 { 
+        grid-area: track1; 
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .track2 {
+        grid-area: track2; 
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    .track3 { 
+        grid-area: track3; 
+        grid-column: 1 / 2;
+        grid-row: 2; 
+    }
+    .track4 { 
+        grid-area: track4;
+        grid-column: 2 / 3;
+        grid-row: 2; 
+    }
+
+
+
+

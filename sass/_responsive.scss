@@ -1,0 +1,57 @@
+@mixin sizes ($height, $width){
+    height: $height;
+    width: $width;
+}
+
+
+
+@media screen and (max-width:480px) {
+    .Imagen_contactos{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        justify-content: flex-start;
+        padding-bottom: 2rem;
+    }
+
+    .Imagen__Destacada{
+        width: 250px;
+        height: 450px;
+    }
+
+    .container.contacto{
+        padding-left: 1rem;
+    }
+    .contacto{
+        height: 740px;
+    }
+
+    .nosotros{
+        div{
+            div{
+                div{
+                    iframe{
+                        width: 250px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+    .catalogo{
+        height: 2500px;
+    }
+
+    .contacto2{
+        height: 760px;
+    }
+    .Playlist{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "track1"
+                            "track2"
+                            "track3"
+                            "track4";
+    }
+}

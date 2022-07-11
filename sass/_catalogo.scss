@@ -1,0 +1,20 @@
+@mixin sizes ($height){
+    height: $height;
+}
+
+
+
+.catalogo{
+    @include sizes(1700px);
+    div{
+        div{
+            div{
+                div{
+                    img{
+                        @include sizes(30px)
+                    }
+                }
+            }
+        }
+    }
+}
