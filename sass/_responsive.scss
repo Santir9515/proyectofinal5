@@ -46,12 +46,27 @@
         height: 760px;
     }
     .Playlist{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: "track1"
-                            "track2"
-                            "track3"
-                            "track4";
+        height: 1130px;
+        .destaPadre{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            .carta{
+                height: 190px;
+                width: 240px;
+                .carta__img{
+                    height: 150px;
+                    width: 210px;
+                }
+                .carta__parrafo{
+                    color: #f5efefc5;
+                    font-weight: bold;
+                }
+                .horario{
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
